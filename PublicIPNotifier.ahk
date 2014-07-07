@@ -21,7 +21,7 @@ ifnotexist,%a_workingdir%/mypubip.txt
 	submitemail:
 	gui, 1:submit
 	fileappend,`r`n%email%,%a_workingdir%\mypubip.txt
-	msgbox,You set %email% as your email address. You can change this at any time by modifying the mypubip.txt file, your email address is stored in there. This script will now run daily, it may help to have it start on pc boot as well. Email notifications will be sent from publicipnotifier.by.brandon@gmail.com.
+	msgbox,You set %email% as your email address. You can change this at any time by modifying the mypubip.txt file, your email address is stored in there. Email notifications will be sent from publicipnotifier.by.brandon@gmail.com.`n`n Please use Task Scheduler to schedule this application to run at whatever interval you like.
 	gui, 1:destroy
 	gosub dailyrun
 	exit
